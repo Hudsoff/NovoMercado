@@ -6,8 +6,10 @@
 package view;
 
 import java.awt.Component;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -23,6 +25,94 @@ public class FormCadastroCondicaoPgto extends javax.swing.JFrame {
      */
     public FormCadastroCondicaoPgto() {
         initComponents();
+    }
+
+    public JButton getjButtonBuscar() {
+        return jButtonBuscar;
+    }
+
+    public void setjButtonBuscar(JButton jButtonBuscar) {
+        this.jButtonBuscar = jButtonBuscar;
+    }
+
+    public JButton getjButtonCancelar() {
+        return jButtonCancelar;
+    }
+
+    public void setjButtonCancelar(JButton jButtonCancelar) {
+        this.jButtonCancelar = jButtonCancelar;
+    }
+
+    public JButton getjButtonNovo() {
+        return jButtonNovo;
+    }
+
+    public void setjButtonNovo(JButton jButtonNovo) {
+        this.jButtonNovo = jButtonNovo;
+    }
+
+    public JButton getjButtonSair() {
+        return jButtonSair;
+    }
+
+    public void setjButtonSair(JButton jButtonSair) {
+        this.jButtonSair = jButtonSair;
+    }
+
+    public JButton getjButtonSalvar() {
+        return jButtonSalvar;
+    }
+
+    public void setjButtonSalvar(JButton jButtonSalvar) {
+        this.jButtonSalvar = jButtonSalvar;
+    }
+
+    public JPanel getjPanelDados() {
+        return jPanelDados;
+    }
+
+    public void setjPanelDados(JPanel jPanelDados) {
+        this.jPanelDados = jPanelDados;
+    }
+
+    public JTextField getjTextFieldDescricao() {
+        return jTextFieldDescricao;
+    }
+
+    public void setjTextFieldDescricao(JTextField jTextFieldDescricao) {
+        this.jTextFieldDescricao = jTextFieldDescricao;
+    }
+
+    public JTextField getjTextFieldID() {
+        return jTextFieldID;
+    }
+
+    public void setjTextFieldID(JTextField jTextFieldID) {
+        this.jTextFieldID = jTextFieldID;
+    }
+
+    public JTextField getjTextFieldParcelas() {
+        return jTextFieldParcelas;
+    }
+
+    public void setjTextFieldParcelas(JTextField jTextFieldParcelas) {
+        this.jTextFieldParcelas = jTextFieldParcelas;
+    }
+
+    public JTextField getjTextFieldPrazo() {
+        return jTextFieldPrazo;
+    }
+
+    public void setjTextFieldPrazo(JTextField jTextFieldPrazo) {
+        this.jTextFieldPrazo = jTextFieldPrazo;
+    }
+
+    public JTextField getjTextFieldPrimeiraParcela() {
+        return jTextFieldPrimeiraParcela;
+    }
+
+    public void setjTextFieldPrimeiraParcela(JTextField jTextFieldPrimeiraParcela) {
+        this.jTextFieldPrimeiraParcela = jTextFieldPrimeiraParcela;
     }
 
     public void ativa(boolean estadoComponente){
@@ -304,7 +394,7 @@ public class FormCadastroCondicaoPgto extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ObjetoCadastros().setVisible(true);
+                new FormCadastroCondicaoPgto().setVisible(true);
             }
         });
     }

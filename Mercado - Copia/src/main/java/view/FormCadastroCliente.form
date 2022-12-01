@@ -125,9 +125,9 @@
                           <Component id="jFormattedTextFieldFone2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jFormattedTextFieldfone1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                       <Component id="jFormattedTextFieldnascimento" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jComboBoxSexo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextFieldemail" alignment="3" min="-2" max="-2" attributes="0"/>

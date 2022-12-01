@@ -6,8 +6,10 @@
 package view;
 
 import java.awt.Component;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -23,6 +25,70 @@ public class FormCadastroColaborador extends javax.swing.JFrame {
      */
     public FormCadastroColaborador() {
         initComponents();
+    }
+
+    public JButton getjButtonBuscar() {
+        return jButtonBuscar;
+    }
+
+    public void setjButtonBuscar(JButton jButtonBuscar) {
+        this.jButtonBuscar = jButtonBuscar;
+    }
+
+    public JButton getjButtonCancelar() {
+        return jButtonCancelar;
+    }
+
+    public void setjButtonCancelar(JButton jButtonCancelar) {
+        this.jButtonCancelar = jButtonCancelar;
+    }
+
+    public JButton getjButtonNovo() {
+        return jButtonNovo;
+    }
+
+    public void setjButtonNovo(JButton jButtonNovo) {
+        this.jButtonNovo = jButtonNovo;
+    }
+
+    public JButton getjButtonSair() {
+        return jButtonSair;
+    }
+
+    public void setjButtonSair(JButton jButtonSair) {
+        this.jButtonSair = jButtonSair;
+    }
+
+    public JButton getjButtonSalvar() {
+        return jButtonSalvar;
+    }
+
+    public void setjButtonSalvar(JButton jButtonSalvar) {
+        this.jButtonSalvar = jButtonSalvar;
+    }
+
+    public JPanel getjPanelDados() {
+        return jPanelDados;
+    }
+
+    public void setjPanelDados(JPanel jPanelDados) {
+        this.jPanelDados = jPanelDados;
+    }
+
+    public JTextField getjTextFieldLogin() {
+        return jTextFieldLogin;
+    }
+
+    public void setjTextFieldLogin(JTextField jTextFieldLogin) {
+        this.jTextFieldLogin = jTextFieldLogin;
+    }
+
+    public JTextField getjTextFieldSenha() {
+        return jTextFieldSenha;
+    }
+
+    public void setjTextFieldSenha(JTextField jTextFieldSenha) {
+        this.jTextFieldSenha = jTextFieldSenha;
     }
 
     public void ativa(boolean estadoComponente){
@@ -250,7 +316,7 @@ public class FormCadastroColaborador extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ObjetoCadastros().setVisible(true);
+                new FormCadastroColaborador().setVisible(true);
             }
         });
     }

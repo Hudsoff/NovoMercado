@@ -56,7 +56,7 @@
                   <Component id="jTextFieldDescricao" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jTextFieldPrazo" alignment="0" pref="32" max="32767" attributes="0"/>
+                          <Component id="jTextFieldPrazo" alignment="0" max="32767" attributes="0"/>
                           <Component id="jTextFieldID" alignment="0" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jTextFieldParcelas" alignment="0" max="32767" attributes="0"/>
                           <Component id="jTextFieldPrimeiraParcela" alignment="0" max="32767" attributes="0"/>

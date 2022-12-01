@@ -6,8 +6,11 @@
 package view;
 
 import java.awt.Component;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -23,6 +26,150 @@ public class FormCadastroProduto extends javax.swing.JFrame {
      */
     public FormCadastroProduto() {
         initComponents();
+    }
+
+    public JButton getjButtonBuscar() {
+        return jButtonBuscar;
+    }
+
+    public void setjButtonBuscar(JButton jButtonBuscar) {
+        this.jButtonBuscar = jButtonBuscar;
+    }
+
+    public JButton getjButtonCancelar() {
+        return jButtonCancelar;
+    }
+
+    public void setjButtonCancelar(JButton jButtonCancelar) {
+        this.jButtonCancelar = jButtonCancelar;
+    }
+
+    public JButton getjButtonNovo() {
+        return jButtonNovo;
+    }
+
+    public void setjButtonNovo(JButton jButtonNovo) {
+        this.jButtonNovo = jButtonNovo;
+    }
+
+    public JButton getjButtonSair() {
+        return jButtonSair;
+    }
+
+    public void setjButtonSair(JButton jButtonSair) {
+        this.jButtonSair = jButtonSair;
+    }
+
+    public JButton getjButtonSalvar() {
+        return jButtonSalvar;
+    }
+
+    public void setjButtonSalvar(JButton jButtonSalvar) {
+        this.jButtonSalvar = jButtonSalvar;
+    }
+
+    public JCheckBox getjCheckBoxAtivo() {
+        return jCheckBoxAtivo;
+    }
+
+    public void setjCheckBoxAtivo(JCheckBox jCheckBoxAtivo) {
+        this.jCheckBoxAtivo = jCheckBoxAtivo;
+    }
+
+    public JComboBox<String> getjComboBoxUnidadeCompra() {
+        return jComboBoxUnidadeCompra;
+    }
+
+    public void setjComboBoxUnidadeCompra(JComboBox<String> jComboBoxUnidadeCompra) {
+        this.jComboBoxUnidadeCompra = jComboBoxUnidadeCompra;
+    }
+
+    public JComboBox<String> getjComboBoxUnidadeVenda() {
+        return jComboBoxUnidadeVenda;
+    }
+
+    public void setjComboBoxUnidadeVenda(JComboBox<String> jComboBoxUnidadeVenda) {
+        this.jComboBoxUnidadeVenda = jComboBoxUnidadeVenda;
+    }
+
+    public JPanel getjPanelDados() {
+        return jPanelDados;
+    }
+
+    public void setjPanelDados(JPanel jPanelDados) {
+        this.jPanelDados = jPanelDados;
+    }
+
+    public JTextField getjTextFieldBarrasEntrada() {
+        return jTextFieldBarrasEntrada;
+    }
+
+    public void setjTextFieldBarrasEntrada(JTextField jTextFieldBarrasEntrada) {
+        this.jTextFieldBarrasEntrada = jTextFieldBarrasEntrada;
+    }
+
+    public JTextField getjTextFieldBarrasSaída() {
+        return jTextFieldBarrasSaída;
+    }
+
+    public void setjTextFieldBarrasSaída(JTextField jTextFieldBarrasSaída) {
+        this.jTextFieldBarrasSaída = jTextFieldBarrasSaída;
+    }
+
+    public JTextField getjTextFieldConversão() {
+        return jTextFieldConversão;
+    }
+
+    public void setjTextFieldConversão(JTextField jTextFieldConversão) {
+        this.jTextFieldConversão = jTextFieldConversão;
+    }
+
+    public JTextField getjTextFieldCusto() {
+        return jTextFieldCusto;
+    }
+
+    public void setjTextFieldCusto(JTextField jTextFieldCusto) {
+        this.jTextFieldCusto = jTextFieldCusto;
+    }
+
+    public JTextField getjTextFieldDescricao() {
+        return jTextFieldDescricao;
+    }
+
+    public void setjTextFieldDescricao(JTextField jTextFieldDescricao) {
+        this.jTextFieldDescricao = jTextFieldDescricao;
+    }
+
+    public JTextField getjTextFieldEstoqueMinimo() {
+        return jTextFieldEstoqueMinimo;
+    }
+
+    public void setjTextFieldEstoqueMinimo(JTextField jTextFieldEstoqueMinimo) {
+        this.jTextFieldEstoqueMinimo = jTextFieldEstoqueMinimo;
+    }
+
+    public JTextField getjTextFieldEstoqueMáximo() {
+        return jTextFieldEstoqueMáximo;
+    }
+
+    public void setjTextFieldEstoqueMáximo(JTextField jTextFieldEstoqueMáximo) {
+        this.jTextFieldEstoqueMáximo = jTextFieldEstoqueMáximo;
+    }
+
+    public JTextField getjTextFieldID() {
+        return jTextFieldID;
+    }
+
+    public void setjTextFieldID(JTextField jTextFieldID) {
+        this.jTextFieldID = jTextFieldID;
+    }
+
+    public JTextField getjTextFieldVenda() {
+        return jTextFieldVenda;
+    }
+
+    public void setjTextFieldVenda(JTextField jTextFieldVenda) {
+        this.jTextFieldVenda = jTextFieldVenda;
     }
 
     public void ativa(boolean estadoComponente){
@@ -404,7 +551,7 @@ public class FormCadastroProduto extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ObjetoCadastros().setVisible(true);
+                new FormCadastroProduto().setVisible(true);
             }
         });
     }

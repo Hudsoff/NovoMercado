@@ -8,10 +8,10 @@ import javax.swing.JOptionPane;
 import view.FormCadastroCliente;
 
 
-public class ControllerCadCliente implements ActionListener{
+public class ControllerCadMarca implements ActionListener{
     FormCadastroCliente telaCadCliente;
     
-    public ControllerCadCliente(FormCadastroCliente parTelaCadCliente){
+    public ControllerCadMarca(FormCadastroCliente parTelaCadCliente){
         this.telaCadCliente = parTelaCadCliente;
         
        telaCadCliente.getjButtonNovo().addActionListener((ActionListener) this);

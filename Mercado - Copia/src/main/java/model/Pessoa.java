@@ -14,11 +14,12 @@ public abstract class Pessoa {
    private String complementoEndereco;
    private char status;
    private Endereco endereco;
+   private String cep;
 
     public Pessoa() {
     }
 
-    public Pessoa(int id, String nome, String fone1, String fone2, String email, Date dtCadastro, String observacao, String complementoEndereco, char status, Endereco endereco) {
+    public Pessoa(int id, String nome, String fone1, String fone2, String email, Date dtCadastro, String observacao, String complementoEndereco, char status, Endereco endereco, String cep) {
         this.id = id;
         this.nome = nome;
         this.fone1 = fone1;
@@ -29,7 +30,19 @@ public abstract class Pessoa {
         this.complementoEndereco = complementoEndereco;
         this.status = status;
         this.endereco = endereco;
+        this.cep = cep;
     }
+    
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+
 
     public int getId() {
         return id;

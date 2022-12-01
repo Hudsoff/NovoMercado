@@ -98,7 +98,7 @@
                   </Group>
               </Group>
           </Group>
-          <Component id="jPanelBotoes" alignment="0" pref="597" max="32767" attributes="0"/>
+          <Component id="jPanelBotoes" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">

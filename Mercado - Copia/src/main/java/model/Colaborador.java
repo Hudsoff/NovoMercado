@@ -15,11 +15,13 @@ public class Colaborador extends Pessoa{
         this.senha = senha;
     }
 
-    public Colaborador(String login, String senha, int id, String nome, String fone1, String fone2, String email, Date dtCadastro, String observacao, String complementoEndereco, char status, Endereco endereco) {
-        super(id, nome, fone1, fone2, email, dtCadastro, observacao, complementoEndereco, status, endereco);
+    public Colaborador(String login, String senha, int id, String nome, String fone1, String fone2, String email, Date dtCadastro, String observacao, String complementoEndereco, char status, Endereco endereco, String cep) {
+        super(id, nome, fone1, fone2, email, dtCadastro, observacao, complementoEndereco, status, endereco, cep);
         this.login = login;
         this.senha = senha;
     }
+
+
 
     public String getLogin() {
         return login;
