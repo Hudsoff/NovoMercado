@@ -6,25 +6,188 @@
 package view;
 
 import java.awt.Component;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
-/**
- *
- * @author aluno
- */
 public class FormCadastroCliente extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ObjetoCadastros
-     */
     public FormCadastroCliente() {
         initComponents();
     }
 
+    public JButton getjButtonBuscar() {
+        return jButtonBuscar;
+    }
+
+    public void setjButtonBuscar(JButton jButtonBuscar) {
+        this.jButtonBuscar = jButtonBuscar;
+    }
+
+    public JButton getjButtonCancelar() {
+        return jButtonCancelar;
+    }
+
+    public void setjButtonCancelar(JButton jButtonCancelar) {
+        this.jButtonCancelar = jButtonCancelar;
+    }
+
+    public JButton getjButtonNovo() {
+        return jButtonNovo;
+    }
+
+    public void setjButtonNovo(JButton jButtonNovo) {
+        this.jButtonNovo = jButtonNovo;
+    }
+
+    public JButton getjButtonSair() {
+        return jButtonSair;
+    }
+
+    public void setjButtonSair(JButton jButtonSair) {
+        this.jButtonSair = jButtonSair;
+    }
+
+    public JButton getjButtonSalvar() {
+        return jButtonSalvar;
+    }
+
+    public void setjButtonSalvar(JButton jButtonSalvar) {
+        this.jButtonSalvar = jButtonSalvar;
+    }
+
+    public JCheckBox getjCheckBox1() {
+        return jCheckBox1;
+    }
+
+    public void setjCheckBox1(JCheckBox jCheckBox1) {
+        this.jCheckBox1 = jCheckBox1;
+    }
+
+    public JComboBox<String> getjComboBoxSexo() {
+        return jComboBoxSexo;
+    }
+
+    public void setjComboBoxSexo(JComboBox<String> jComboBoxSexo) {
+        this.jComboBoxSexo = jComboBoxSexo;
+    }
+
+    public JFormattedTextField getjFormattedTextFieldCEP() {
+        return jFormattedTextFieldCEP;
+    }
+
+    public void setjFormattedTextFieldCEP(JFormattedTextField jFormattedTextFieldCEP) {
+        this.jFormattedTextFieldCEP = jFormattedTextFieldCEP;
+    }
+
+    public JFormattedTextField getjFormattedTextFieldCPF() {
+        return jFormattedTextFieldCPF;
+    }
+
+    public void setjFormattedTextFieldCPF(JFormattedTextField jFormattedTextFieldCPF) {
+        this.jFormattedTextFieldCPF = jFormattedTextFieldCPF;
+    }
+
+    public JFormattedTextField getjFormattedTextFieldFone2() {
+        return jFormattedTextFieldFone2;
+    }
+
+    public void setjFormattedTextFieldFone2(JFormattedTextField jFormattedTextFieldFone2) {
+        this.jFormattedTextFieldFone2 = jFormattedTextFieldFone2;
+    }
+
+    public JFormattedTextField getjFormattedTextFieldfone1() {
+        return jFormattedTextFieldfone1;
+    }
+
+    public void setjFormattedTextFieldfone1(JFormattedTextField jFormattedTextFieldfone1) {
+        this.jFormattedTextFieldfone1 = jFormattedTextFieldfone1;
+    }
+
+    public JFormattedTextField getjFormattedTextFieldnascimento() {
+        return jFormattedTextFieldnascimento;
+    }
+
+    public void setjFormattedTextFieldnascimento(JFormattedTextField jFormattedTextFieldnascimento) {
+        this.jFormattedTextFieldnascimento = jFormattedTextFieldnascimento;
+    }
+
+    public JPanel getjPanelDados() {
+        return jPanelDados;
+    }
+
+    public void setjPanelDados(JPanel jPanelDados) {
+        this.jPanelDados = jPanelDados;
+    }
+
+    public JTextField getjTextFieldBairro() {
+        return jTextFieldBairro;
+    }
+
+    public void setjTextFieldBairro(JTextField jTextFieldBairro) {
+        this.jTextFieldBairro = jTextFieldBairro;
+    }
+
+    public JTextField getjTextFieldCidade() {
+        return jTextFieldCidade;
+    }
+
+    public void setjTextFieldCidade(JTextField jTextFieldCidade) {
+        this.jTextFieldCidade = jTextFieldCidade;
+    }
+
+    public JTextField getjTextFieldID() {
+        return jTextFieldID;
+    }
+
+    public void setjTextFieldID(JTextField jTextFieldID) {
+        this.jTextFieldID = jTextFieldID;
+    }
+
+    public JTextField getjTextFieldNome() {
+        return jTextFieldNome;
+    }
+
+    public void setjTextFieldNome(JTextField jTextFieldNome) {
+        this.jTextFieldNome = jTextFieldNome;
+    }
+
+    public JTextField getjTextFieldRG() {
+        return jTextFieldRG;
+    }
+
+    public void setjTextFieldRG(JTextField jTextFieldRG) {
+        this.jTextFieldRG = jTextFieldRG;
+    }
+
+    public JTextField getjTextFieldRua() {
+        return jTextFieldRua;
+    }
+
+    public void setjTextFieldRua(JTextField jTextFieldRua) {
+        this.jTextFieldRua = jTextFieldRua;
+    }
+
+    public JTextField getjTextFieldUF() {
+        return jTextFieldUF;
+    }
+
+    public void setjTextFieldUF(JTextField jTextFieldUF) {
+        this.jTextFieldUF = jTextFieldUF;
+    }
+
+    public JTextField getjTextFieldemail() {
+        return jTextFieldemail;
+    }
+
+    public void setjTextFieldemail(JTextField jTextFieldemail) {
+        this.jTextFieldemail = jTextFieldemail;
+    }
+    
     public void ativa(boolean estadoComponente){
         jButtonNovo.setEnabled(estadoComponente);
         jButtonCancelar.setEnabled(!estadoComponente);
@@ -55,11 +218,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         JpainelTitulo = new javax.swing.JPanel();
         jLabelTitulo = new javax.swing.JLabel();
         jPanelDados = new javax.swing.JPanel();
@@ -87,28 +245,18 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         jFormattedTextFieldCPF = new javax.swing.JFormattedTextField();
         jTextFieldRG = new javax.swing.JTextField();
         jFormattedTextFieldnascimento = new javax.swing.JFormattedTextField();
-        jComboBoxSexo = new javax.swing.JComboBox<>();
+        jComboBoxSexo = new javax.swing.JComboBox<String>();
         jLabelemail = new javax.swing.JLabel();
         jTextFieldemail = new javax.swing.JTextField();
         jFormattedTextFieldCEP = new javax.swing.JFormattedTextField();
         jToggleButtonBuscaCEP = new javax.swing.JToggleButton();
         jLabelRua = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jTextFieldRua = new javax.swing.JTextField();
         jTextFieldBairro = new javax.swing.JTextField();
         jLabelCidade = new javax.swing.JLabel();
         jTextFieldCidade = new javax.swing.JTextField();
         jLabelUF = new javax.swing.JLabel();
         jTextFieldUF = new javax.swing.JTextField();
-
-        jButton3.setText("jButton3");
-
-        jButton2.setText("jButton2");
-
-        jButton1.setText("jButton1");
-
-        jButton4.setText("jButton4");
-
-        jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cadastro de Bairros");
@@ -243,7 +391,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jLabelFone2.setText("Telefone 2");
 
-        jComboBoxSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxSexo.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabelemail.setText("E-mail");
 
@@ -304,7 +452,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                                                 .addComponent(jLabelUF))
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField2)
+                                                .addComponent(jTextFieldRua)
                                                 .addComponent(jTextFieldCidade, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
                                                 .addComponent(jTextFieldUF, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addComponent(jTextFieldBairro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -348,7 +496,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                             .addComponent(jFormattedTextFieldCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jToggleButtonBuscaCEP)
                             .addComponent(jLabelRua)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextFieldRua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextFieldBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -418,17 +566,13 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ObjetoCadastros().setVisible(true);
+                new FormCadastroCliente().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JpainelTitulo;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonBuscar;
     private javax.swing.JButton jButtonCancelar;
     private javax.swing.JButton jButtonNovo;
@@ -458,13 +602,12 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelemail;
     private javax.swing.JPanel jPanelBotoes;
     private javax.swing.JPanel jPanelDados;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextFieldBairro;
     private javax.swing.JTextField jTextFieldCidade;
     private javax.swing.JTextField jTextFieldID;
     private javax.swing.JTextField jTextFieldNome;
     private javax.swing.JTextField jTextFieldRG;
+    private javax.swing.JTextField jTextFieldRua;
     private javax.swing.JTextField jTextFieldUF;
     private javax.swing.JTextField jTextFieldemail;
     private javax.swing.JToggleButton jToggleButtonBuscaCEP;
